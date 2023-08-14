@@ -1,0 +1,116 @@
+/* Global RUles */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    font-family: 'open sans', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (max-width: 992px) {
+    .container  {
+        width: 970px;
+    }
+}
+@media (max-width: 767px) {
+    .container  {
+        width: 750px;
+    }
+}
+@media (max-width: 576px) {
+    .container  {
+        width: 100%;
+    } 
+}
+/* Variables */
+:root {
+    --bule: #0075FF;
+    --green: #22C55E;
+    --yellow: #F59E0B;
+    --red: #F44336;
+    --checked: #fafafa;
+}
+/* Header */
+.header {
+    position: relative;
+    top:0;
+    left: 0;
+    position: relative;
+    height: 100vh;
+}
+.header .container {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px black;
+    padding: 20px;
+}
+.header .container .logo {
+    margin: 10px auto 50px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+}
+.header .container .logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.header .container .logo::after {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+}
+.header .container .links {
+    flex: 1;
+}
+.header .container .links .link {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    margin-left: 5px;
+    padding-left: 35px;
+    font-size: 15px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.header .container .links .link:hover, .header .container .links .checked {
+    background-color: var(--checked);
+}
+.header .container .links .link::before {
+	content: var(--icon);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
