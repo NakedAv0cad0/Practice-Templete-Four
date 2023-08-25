@@ -16,20 +16,150 @@
         <link rel="stylesheet" href="css/all.min.css">
     </head>
     <body>
-        <header class="header" id="header">
-            <div class="container">
-                <span class="logo">Younes</span>
+        <div class="sidebar" id="sidebar">
+            <div class="bar">
+                <span class="logo">Elzero</span>
                 <ul class="links">
-                    <li><a class="link checked" style="--icon:'\f080'" href="#dashboard">Dashboard</a></li>
-                    <li><a class="link" style="--icon:'\f013'" href="#setting">Setting</a></li>
-                    <li><a class="link" style="--icon:'\f007'" href="#profile">Profile</a></li>
-                    <li><a class="link" style="--icon:'\f542'" href="#projects">Projects</a></li>
-                    <li><a class="link" style="--icon:'\f19d'" href="#courses">Courses</a></li>
-                    <li><a class="link" style="--icon:'\f0c0'" href="#friends">Friends</a></li>
-                    <li><a class="link" style="--icon:'\f15b'" href="#files">Files</a></li>
-                    <li><a class="link" style="--icon:'\f09d'" href="#plans">Plans</a></li>
+                    <li><a class="link checked" style="--icon:'\f080'" href="#dashboard"><p>Dashboard</p></a></li>
+                    <li><a class="link" style="--icon:'\f013'" href="#setting"><p>Setting</p></a></li>
+                    <li><a class="link" style="--icon:'\f007'" href="#profile"><p>Profile</p></a></li>
+                    <li><a class="link" style="--icon:'\f542'" href="#projects"><p>Projects</p></a></li>
+                    <li><a class="link" style="--icon:'\f19d'" href="#courses"><p>Courses</p></a></li>
+                    <li><a class="link" style="--icon:'\f0c0'" href="#friends"><p>Friends</p></a></li>
+                    <li><a class="link" style="--icon:'\f15b'" href="#files"><p>Files</p></a></li>
+                    <li><a class="link" style="--icon:'\f09d'" href="#plans"><p>Plans</p></a></li>
                 </ul>
             </div>
-        </header>
+        </div>
+        <div class="mainbar">
+            <header class="header" id="header">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="bordered-input" type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="profile">
+                    <div class="bell">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="image">
+                        <img src="images/profile.png" alt="profile">
+                    </div>
+                </div>
+            </header>
+            <h1 class="heading">Dashboard</h1>
+            <div class="container">
+                <div class="dashboard" id="dashboard">
+                    <div class="box">
+                        <div class="win-1">
+                            <div class="greeting">
+                            <h2>Welcome</h2>    
+                                <span class="light">Elzero</span>
+                            </div>
+                            <div class="image">
+                                <img src="images/welcome.png" alt="profile">
+                            </div>
+                        </div>
+                        <div class="win-2">
+                            <div class="image">
+                                <img src="images/profile.png" alt="profile">
+                            </div>
+                            <div class="info">
+                                <div class="clon">
+                                    <p>Elzero</p>
+                                    <span class="light">Developer</span>
+                                </div>
+                                <div class="clon">
+                                    <p>80</p>
+                                    <span class="light">Project</span>
+                                </div>
+                                <div class="clon">
+                                    <p>&dollar;8500</p>
+                                    <span class="light">Earned</span>
+                                </div>
+                            </div>
+                            <button class="btn">Profile</button>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="greeting">
+                            <h2>Quick Draft</h2>
+                            <span class="light">Write A Draft For Your Ideas</span>
+                        </div>
+                        <form action="#">
+                            <input type="text" placeholder="Title">
+                            <textarea name="ideas" placeholder="Your Thought"></textarea>
+                        </form>
+                        <button class="btn">Save</button>
+                    </div>
+                    <div class="box">
+                        <div class="greeting">
+                            <h2>Yearly Targets</h2>
+                            <span class="light">Targets Of The Year</span>
+                        </div>
+                            <div  style="--range: 80%;--value: '80%'; --color: var(--blue); --bg: var(--light-blue)" class="clon">
+                                <div class="holder"><i class="fa-solid fa-dollar-sign"></i></div> 
+                                <div class="bar">
+                                    <span class="light">Mony</span>
+                                    <p>&dollar;20.000</p>
+                                    <div class="range"><span></span></div>
+                                </div>
+                            </div>
+                            <div  style="--range: 55%; --value: '55%'; --color: var(--yellow); --bg: var(--light-yellow)" class="clon">
+                                <div class="holder"><i class="fa-solid fa-code"></i>    </div> 
+                                <div class="bar">
+                                    <span class="light">Projects</span>
+                                    <p>24</p>
+                                    <div class="range"><span></span></div>
+                                </div>
+                            </div>
+                            <div  style="--range: 75%;--value: '75%'; --color: var(--green); --bg: var(--light-green)" class="clon">
+                                <div class="holder"><i class="fa-regular fa-user"></i></div> 
+                                <div class="bar">
+                                    <span class="light">Team</span>
+                                    <p>12</p>
+                                    <div class="range"><span></span></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="box">
+                        <div class="greeting">
+                            <h2>Tickets Statistics</h2>
+                            <div class="light">Everything About Support Tickets</div>
+                        </div>
+                        <div class="frame">
+                            <div class="clon">
+                                <i class="fa-regular fa-newspaper" style="color: #d38c12;"></i>
+                                <span>2500</span>
+                                <div class="light">Total</div>
+                            </div>
+                            <div class="clon">
+                                <i class="fa-solid fa-spinner" style="color: #005eff;"></i>
+                                <span>500</span>
+                                <div class="light">Pending</div>
+                            </div>
+                            <div class="clon">
+                                <i class="fa-regular fa-circle-check" style="color: #00ff2a;"></i>
+                                <span>1900</span>
+                                <div class="light">Closed</div>
+                            </div>
+                            <div class="clon">
+                                <i class="fa-regular fa-rectangle-xmark" style="color: #ff3333;"></i>
+                                <span>100</span>
+                                <div class="light">Deleted</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
