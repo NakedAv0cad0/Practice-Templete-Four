@@ -648,7 +648,7 @@ body {
 .dashboard .box:nth-of-type(7) .holder {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
 }
 .dashboard .box:nth-of-type(7) .holder .clon {
@@ -661,4 +661,34 @@ body {
 }
 .dashboard .box:nth-of-type(7) .holder .clon:not(:first-of-type) p {
     color: black;
+}
+/* box 8 */
+.dashboard .box:nth-of-type(8) .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+.dashboard .box:nth-of-type(8) .holder .clon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .box:nth-of-type(8) .holder .clon:not(:last-of-type) {
+    border-bottom: 1px solid var(--box-background);
+}
+.dashboard .box:nth-of-type(8) .holder .clon .main {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .box:nth-of-type(8) .holder .clon .main p {
+    font-weight: 600;
+}
+.dashboard .box:nth-of-type(8) .holder .clon .image {
+    width: 50px;
+}
+.dashboard .box:nth-of-type(8) .holder .clon .image img {
+    width: 100%;
 }
