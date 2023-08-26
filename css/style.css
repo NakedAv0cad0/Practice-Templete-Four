@@ -772,6 +772,44 @@ body {
     animation: doing 0.7s infinite alternate;
     transition: var(--delay);
 }
+/* box 10 */
+.dashboard .box:nth-last-child(4) .holder {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard .box:nth-last-child(4) .holder .clon {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 20px;
+}
+.dashboard .box:nth-last-child(4) .holder .clon::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 15px;
+    background-color: var(--bg);
+    border-radius: 50%;
+}
+.dashboard .box:nth-last-child(4) .holder .clon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: var(--bg);
+}
+.dashboard .box:nth-last-child(4) .holder .clon .disc {
+    color: var(--light-color);
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
 /* Animation */
 @keyframes doing {
     0% {
