@@ -692,3 +692,92 @@ body {
 .dashboard .box:nth-of-type(8) .holder .clon .image img {
     width: 100%;
 }
+/* box 9 */
+.dashboard .box:nth-of-type(9) {
+    position: relative;
+}
+.dashboard .box:nth-of-type(9) .image {
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    opacity: 0.1;
+}
+.dashboard .box:nth-of-type(9) .image img {
+    width: 100%;
+}
+@media (max-width: 567px) {
+    .dashboard .box:nth-of-type(9) .image {
+        display: none;
+    }
+}
+.dashboard .box:nth-of-type(9) .holder {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+.dashboard .box:nth-of-type(9) .holder .line {
+    width: 2px;
+    background-color: var(--blue);
+    margin-left: 20px;
+    max-height: 261px;
+}
+.dashboard .box:nth-of-type(9) .holder .text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.dashboard .box:nth-of-type(9) .holder p {
+    font-weight: 600;
+    position: relative;
+    display: flex;
+}
+.dashboard .box:nth-of-type(9) .holder p::before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    left: -50px;
+    top: 0;
+    transform: translateY(-20%);
+    background-color: white;
+}
+/* .dashboard .box:nth-of-type(9) .holder p:last-of-type::after{
+    content: "";
+    height: 24px;
+    width: 2px;
+    position: absolute;
+    left: -34px;
+    top: -100%;
+    transform: translateY(-52%);
+    background-color: var(--blue);
+} */
+.dashboard .box:nth-of-type(9) .holder p:not(.not-started)::before {
+    background-image: radial-gradient(var(--blue) 60% 60%, white 60%);
+}
+.dashboard .box:nth-of-type(9) .holder .doing::after {
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    left: -50px;
+    top: 0;
+    transform: translateY(-20%);
+    background-color: white;
+    animation: doing 0.7s infinite alternate;
+    transition: var(--delay);
+}
+/* Animation */
+@keyframes doing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
