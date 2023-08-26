@@ -1,3 +1,23 @@
+/* Variables */
+:root {
+    --blue-alt:#0062d1; 
+    --blue: #0075FF;
+    --light-blue: rgb(179,214,255);
+    --green: #22C55E;
+    --light-green: rgb(189,237,207);
+    --yellow: #F59E0B;
+    --light-yellow: rgb(252,226,182);
+    --red: #F44336;
+    --light-red: rgb(251,199,195);
+    --light-color: #777;
+    --checked: #fafafa;
+    --side-width: 220px;
+    --delay: 0.3s;
+    --main-padding: 100px;
+    --box-background: #ececec;
+    --border-color: #77777779;
+    --section-background: rgb(241,245,249);
+}
 /* Global RUles */
 * {
     padding: 0;
@@ -26,7 +46,7 @@ input:focus, textarea:focus {
 }
 /* Componenets */
 .container {
-    padding: 0 10px;
+    padding: 0 20px;
     position: relative;
     max-width: 100%;
     /* left: var(--side-width); */
@@ -59,7 +79,7 @@ input:focus, textarea:focus {
     background-color: white;
 }
 .light {
-    color: #777;
+    color: var(--light-color);
     margin: 10px 0 20px;
     font-size: 15px;
     display: block;
@@ -67,6 +87,8 @@ input:focus, textarea:focus {
 @media (max-width: 767px) {
     .light {
         font-size: 14px;
+        text-align: center;
+        margin-bottom: 5px;
     }
 }
 .btn {
@@ -100,27 +122,8 @@ input:focus, textarea:focus {
 }
 @media (max-width: 767px) {
     .greeting h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
-}
-/* Variables */
-:root {
-    --blue-alt:#0062d1; 
-    --blue: #0075FF;
-    --light-blue: rgb(179,214,255);
-    --green: #22C55E;
-    --light-green: rgb(189,237,207);
-    --yellow: #F59E0B;
-    --light-yellow: rgb(252,226,182);
-    --red: #F44336;
-    --light-red: rgb(251,199,195);
-    --checked: #fafafa;
-    --side-width: 220px;
-    --delay: 0.3s;
-    --main-padding: 100px;
-    --box-background: #ececec;
-    --border-color: #77777779;
-    --section-background: rgb(241,245,249);
 }
 /* main Form */
 body {
@@ -527,7 +530,7 @@ body {
     gap: 10px;
     padding: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 567px) {
     .dashboard .box:nth-of-type(4) .frame {
         grid-template-columns: 1fr;
     }
@@ -565,15 +568,15 @@ body {
     gap: 10px;
 }
 .dashboard .box:nth-of-type(5) .holder .clon:not(:last-of-type) {
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--border-color);
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid var(--box-background);
     padding-bottom: 20px;
 }
 .dashboard .box:nth-of-type(5) .holder .clon .main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 @media (max-width:576px) {
     .dashboard .box:nth-of-type(5) .holder .clon, .dashboard .box:nth-of-type(5) .holder .clon .main {
@@ -584,7 +587,7 @@ body {
     }
 }
 .dashboard .box:nth-of-type(5) .holder .clon .image {
-    width: 120px;
+    width: 100px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -597,13 +600,13 @@ body {
 .dashboard .box:nth-of-type(5) .holder .clon .image img {
     max-width: 100%;
 }
-.dashboard .box:nth-of-type(5) .holder .clon .date span {
+.date {
     font-size: 12px;
     background-color: var(--box-background);
     padding: 5px;
     display: block;
-    min-width: 71.53px;
     border-radius: 5px;
+    white-space: nowrap;
 }
 /* box 6 */
 .dashboard .box:nth-of-type(6) .holder {
@@ -620,7 +623,7 @@ body {
 }
 .dashboard .box:nth-of-type(6) .holder .clon.clon:not(:last-of-type) {
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .dashboard .box:nth-of-type(6) .holder .deleted {
     opacity: 0.3;
@@ -635,4 +638,27 @@ body {
 }
 .dashboard .box:nth-of-type(6) .holder .deleted .text {
     text-decoration: line-through;
+}
+@media (max-width: 767px) {
+    .dashboard .box:nth-of-type(6) .holder .clon h4 {
+        font-size: 16px;
+    }
+}
+/* box 7 */
+.dashboard .box:nth-of-type(7) .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.dashboard .box:nth-of-type(7) .holder .clon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .box:nth-of-type(7) .holder .clon h4 {
+    color: var(--blue);
+}
+.dashboard .box:nth-of-type(7) .holder .clon:not(:first-of-type) p {
+    color: black;
 }
