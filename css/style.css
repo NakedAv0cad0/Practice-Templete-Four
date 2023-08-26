@@ -605,3 +605,34 @@ body {
     min-width: 71.53px;
     border-radius: 5px;
 }
+/* box 6 */
+.dashboard .box:nth-of-type(6) .holder {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+.dashboard .box:nth-of-type(6) .holder .clon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dashboard .box:nth-of-type(6) .holder .clon.clon:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+.dashboard .box:nth-of-type(6) .holder .deleted {
+    opacity: 0.3;
+    
+}
+.dashboard .box:nth-of-type(6) .holder .clon:not(.deleted) i {
+    cursor: pointer;
+    transition: var(--delay);
+}
+.dashboard .box:nth-of-type(6) .holder .clon:not(.deleted) i:hover {
+    color: var(--red);
+}
+.dashboard .box:nth-of-type(6) .holder .deleted .text {
+    text-decoration: line-through;
+}
