@@ -91,8 +91,12 @@ input:focus, textarea:focus {
     color: white;
 }
 .greeting {
-    text-align: center;
-    margin: 20px 0 0;
+    margin: 20px;
+}
+@media (max-width: 767px) {
+    .greeting {
+        text-align: center;
+    }
 }
 @media (max-width: 767px) {
     .greeting h2 {
@@ -547,4 +551,57 @@ body {
 }
 .dashboard .box:nth-of-type(4) .frame .clon .light {
     margin: 0;
+}
+/* box 4 */
+.dashboard .box:nth-of-type(5) .holder {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard .box:nth-of-type(5) .holder .clon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+.dashboard .box:nth-of-type(5) .holder .clon:not(:last-of-type) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+.dashboard .box:nth-of-type(5) .holder .clon .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width:576px) {
+    .dashboard .box:nth-of-type(5) .holder .clon, .dashboard .box:nth-of-type(5) .holder .clon .main {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+        justify-content: center;
+    }
+}
+.dashboard .box:nth-of-type(5) .holder .clon .image {
+    width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width:576px) {
+    .dashboard .box:nth-of-type(5) .holder .clon .image {
+        align-self: center;
+        width: 100%;
+    }
+}
+.dashboard .box:nth-of-type(5) .holder .clon .image img {
+    max-width: 100%;
+}
+.dashboard .box:nth-of-type(5) .holder .clon .date span {
+    font-size: 12px;
+    background-color: var(--box-background);
+    padding: 5px;
+    display: block;
+    min-width: 71.53px;
+    border-radius: 5px;
 }
