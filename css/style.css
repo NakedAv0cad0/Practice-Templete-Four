@@ -46,7 +46,7 @@ input:focus, textarea:focus {
 }
 /* Componenets */
 .container {
-    padding: 0 20px;
+    padding: 0 15px;
     position: relative;
     max-width: 100%;
     /* left: var(--side-width); */
@@ -644,6 +644,10 @@ body {
         font-size: 16px;
     }
 }
+.dashboard .box:nth-of-type(6) .holder .clon .text p {
+    color: var(--light-color);
+    margin: 10px 0;
+}
 /* box 7 */
 .dashboard .box:nth-of-type(7) .holder {
     display: flex;
@@ -809,6 +813,45 @@ body {
     font-size: 14px;
     display: block;
     margin-top: 10px;
+}
+/* box 11 */
+.dashboard .box:nth-last-child(3) .holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard .box:nth-last-child(3) .holder .top {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.dashboard .box:nth-last-child(3) .holder .top .image {
+    width: 60px;
+}
+.dashboard .box:nth-last-child(3) .holder .top .image img {
+    width: 100%;
+}
+.dashboard .box:nth-last-child(3) .holder .middle {
+    line-height: 1.6;
+    border: 1px solid;
+    border-color:  var(--box-background) transparent;
+    padding: 20px;
+    font-weight: 600;
+}
+.dashboard .box:nth-last-child(3) .holder .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.dashboard .box:nth-last-child(3) .holder .clon {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    height: fit-content;
+}
+.dashboard .box:nth-last-child(3) .holder .clon {
+    color: var(--light-color);
 }
 /* Animation */
 @keyframes doing {
