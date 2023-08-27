@@ -853,6 +853,65 @@ body {
 .dashboard .box:nth-last-child(3) .holder .clon {
     color: var(--light-color);
 }
+/* box 12 */
+.dashboard .box:nth-last-child(2) .holder {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px;
+}
+.dashboard .box:nth-last-child(2) .holder .clon {
+    display: flex;
+    align-items: stretch;
+}
+.dashboard .box:nth-last-child(2) .holder .clon p {
+    flex: 1;
+    padding: 0 10px;
+    position: relative;
+    background-color: var(--color);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    font-weight: 600;
+}
+.dashboard .box:nth-last-child(2) .holder .clon p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    z-index: -1;
+}
+.dashboard .box:nth-last-child(2) .holder i {
+    font-size: 30px;
+    background-color: var(--color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard .box:nth-last-child(2) .holder button {
+    width: 80px;
+    /* border: none; */
+    background-color: var(--color);
+    color: white;
+    border-color: var(--color) transparent var(--color) white;
+    font-weight: 700;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: var(--delay);
+}
+.dashboard .box:nth-last-child(2) .holder button:hover {
+    transform: translateX(5px);
+    box-shadow: 0px 1px 2px var(--color);
+}
 /* Animation */
 @keyframes doing {
     0% {
