@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>>/<</title>
+        <title>Dashboard</title>
         <meta name="description" content="project">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normie.css">
+        <!-- FrameWork -->
+        <link rel="stylesheet" href="/css/framwork.css">
         <!-- main css file -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +22,8 @@
             <div class="bar">
                 <span class="logo">Elzero</span>
                 <ul class="links">
-                    <li><a class="link checked" style="--icon:'\f080'" href="#dashboard"><p>Dashboard</p></a></li>
-                    <li><a class="link" style="--icon:'\f013'" href="#setting"><p>Setting</p></a></li>
+                    <li><a class="link checked" style="--icon:'\f080'" href="/dashboard.html"><p>Dashboard</p></a></li>
+                    <li><a class="link" style="--icon:'\f013'" href="/settings.html"><p>Setting</p></a></li>
                     <li><a class="link" style="--icon:'\f007'" href="#profile"><p>Profile</p></a></li>
                     <li><a class="link" style="--icon:'\f542'" href="#projects"><p>Projects</p></a></li>
                     <li><a class="link" style="--icon:'\f19d'" href="#courses"><p>Courses</p></a></li>
@@ -48,7 +50,7 @@
             </header>
             <h1 class="heading">Dashboard</h1>
             <div class="container">
-                <div class="dashboard" id="dashboard">
+                <div class="dashboard page-grid" id="dashboard">
                     <div class="box">
                         <div class="win-1">
                             <div class="greeting">
@@ -353,19 +355,19 @@
                             <div class="greeting">
                                 <h2>Reminders</h2>
                             </div>
-                            <div  style="--bg: var(--blue)" class="clon">
+                            <div  style="--bg: var(--blue); --bgl: var(--light-blue)" class="clon">
                                 <h4>Check My Tasks List</h4>
                                 <span class="disc">28/09/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--red)" class="clon">
+                            <div style="--bg: var(--red); --bgl: var(--light-red)" class="clon">
                                 <h4>Check My Projects</h4>
                                 <span class="disc">26/10/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--green)" class="clon">
+                            <div style="--bg: var(--green); --bgl: var(--light-green)" class="clon">
                                 <h4>Call All My Clients</h4>
                                 <span class="disc">10/11/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--yellow)" class="clon">
+                            <div style="--bg: var(--yellow); --bgl: var(--light-yellow)" class="clon">
                                 <h4>Finish The Development Workshop</h4>
                                 <span class="disc">08/01/2023 - 12:00am</span>
                             </div>

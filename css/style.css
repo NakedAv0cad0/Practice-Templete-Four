@@ -329,24 +329,11 @@ body {
     background-color: red;
 }
 /* Dashboard */
-.dashboard {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-@media (max-width: 767px) {
-    .dashboard {
-        grid-template-columns: 1fr;
-    }
-}
-.dashboard .box {
-    border-radius: 10px;
-}
 /* box 1 */
-.dashboard .box {
+.box {
     background-color: white;
     overflow: hidden;
+    border-radius: 10px;
 }
 .dashboard .box:first-of-type .win-1 {
     position: relative;
@@ -800,14 +787,17 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .dashboard .box:nth-last-child(4) .holder .clon {
     position: relative;
     margin-left: 30px;
-    padding-left: 20px;
+    padding: 7px 0px 7px 20px;
+    z-index: 1;
+    cursor: context-menu;
 }
 .dashboard .box:nth-last-child(4) .holder .clon::before {
+    --delay: 0.2s;
     content: "";
     position: absolute;
     left: -30px;
@@ -815,10 +805,21 @@ body {
     transform: translateY(-50%);
     height: 15px;
     width: 15px;
-    background-color: var(--bg);
+    background-color: var(--bgl);
     border-radius: 50%;
+    transition: left var(--delay) var(--delay), border-radius 0s calc(var(--delay) + 0.3s), height var(--delay) calc(var(--delay) + 0.1s), width calc(var(--delay) + 0.1s)   ;
+    z-index: -1;
+}
+.dashboard .box:nth-last-child(4) .holder .clon:hover::before {
+    left: 10px;
+    width: 97%;
+    height: 100%;
+    border-radius: 0;
+    transition: left var(--delay), border-radius 0s calc(var(--delay) - 0.1s), height 0.3s calc(var(--delay) - 0.1s), width 0.3s calc(var(--delay) - 0.1s);
+
 }
 .dashboard .box:nth-last-child(4) .holder .clon::after {
+    --delay: 0.2s;
     content: "";
     position: absolute;
     left: 0;
@@ -826,12 +827,25 @@ body {
     height: 100%;
     width: 2px;
     background-color: var(--bg);
+    transition: 0.5s;
+}
+.dashboard .box:nth-last-child(4) .holder .clon:hover::after {
+    left: 100%;
 }
 .dashboard .box:nth-last-child(4) .holder .clon .disc {
     color: var(--light-color);
     font-size: 14px;
     display: block;
     margin-top: 10px;
+}
+.dashboard .box:nth-last-child(4) .holder .clon h4, .dashboard .box:nth-last-child(4) .holder .clon span {
+    transition: var(--delay);
+}
+.dashboard .box:nth-last-child(4) .holder .clon:hover h4 {
+    font-weight: 900;
+}
+.dashboard .box:nth-last-child(4) .holder .clon:hover span {
+    font-weight: 600;
 }
 /* box 11 */
 .dashboard .box:nth-last-child(3) .holder {
@@ -1010,6 +1024,57 @@ body {
     font-weight: bold;
     box-shadow: -1px 1px 3px var(--border-color);
     color: black;
+}
+/* Settings */
+.settings .box:first-of-type .holder .bar .text span {
+    font-size: 14px;
+    color: var(--light-color);
+}
+.settings .box:first-of-type .holder .bar .btn-slide {
+    width: 70px;
+    height: 30px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: var(--delay);
+}
+.settings .box:first-of-type .holder .bar .btn-slide:hover {
+    background-color: white;
+}
+.settings .box:first-of-type .holder .bar .btn-slide .on, .settings .box:first-of-type .holder .bar .btn-slide .off {
+    top: 0px;
+    left: 0px;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: var(--delay);
+}
+.settings .box:first-of-type .holder .bar .btn-slide .on {
+    z-index: 10;
+    color: white;
+}
+.settings .box:first-of-type .holder .bar .btn-slide:hover .on {
+    z-index: 1;
+    left: 100%;
+    transform: translateX(-102%);
+}
+.settings .box:first-of-type .holder .bar .btn-slide .off {
+    z-index: 1;
+    color: transparent;
+}
+.settings .box:first-of-type .holder .bar .btn-slide:hover .off {
+    z-index: 10;
+    left: 102%;
+    transform: translateX(-102%);
+    color: var(--blue);
+}
+.settings .box:first-of-type .holder textarea {
+    height: 200px;
+    resize: none;
+    border: none;
+    background-color: var(--box-background);
+    caret-color: var(--blue);
+    font-size: 14px;
 }
 /* Animation */
 @keyframes doing {

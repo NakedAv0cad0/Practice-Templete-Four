@@ -1,0 +1,56 @@
+/* Dispaly */
+.box-flex-cl {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.d-flex {
+    display: flex;
+}
+.d-flex-jcc {
+    justify-content: center;
+}
+.d-flex-jcsb {
+    justify-content: space-between;
+}
+.d-flex-aic {
+    align-items: center;
+}
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+@media (max-width: 767px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Position */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/* Padding and Margin */
+.p-20 {
+    padding: 20px;
+}
+.p-t-0 {
+    padding-top: 0;
+}
+.m-20 {
+    margin: 20px;
+}
+/* Colors */
+.light-black {
+    color: #777;
+}
+/* Font-size */
+@media (max-width:567px) {
+    .ph {
+    font-size: 12px;
+}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Settings</title>
+        <meta name="description" content="project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normie.css">
+        <!-- FrameWork -->
+        <link rel="stylesheet" href="/css/framwork.css">
+        <!-- main css file -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <!-- font awsome -->
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+    <body>
+        <div class="sidebar" id="sidebar">
+            <div class="bar">
+                <span class="logo">Elzero</span>
+                <ul class="links">
+                    <li><a class="link" style="--icon:'\f080'" href="/index.html"><p>Dashboard</p></a></li>
+                    <li><a class="link checked" style="--icon:'\f013'" href="/settings.html"><p>Setting</p></a></li>
+                    <li><a class="link" style="--icon:'\f007'" href="#profile"><p>Profile</p></a></li>
+                    <li><a class="link" style="--icon:'\f542'" href="#projects"><p>Projects</p></a></li>
+                    <li><a class="link" style="--icon:'\f19d'" href="#courses"><p>Courses</p></a></li>
+                    <li><a class="link" style="--icon:'\f0c0'" href="#friends"><p>Friends</p></a></li>
+                    <li><a class="link" style="--icon:'\f15b'" href="#files"><p>Files</p></a></li>
+                    <li><a class="link" style="--icon:'\f09d'" href="#plans"><p>Plans</p></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainbar">
+            <header class="header" id="header">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="bordered-input" type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="profile">
+                    <div class="bell">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <div class="image">
+                        <img src="images/profile.png" alt="profile">
+                    </div>
+                </div>
+            </header>
+            <h1 class="heading">Settings</h1>
+            <div class="container">
+                <div class="settings page-grid" id="settings">
+                    <div class="box">
+                        <div class="greeting">
+                            <h2>Site Control</h2>
+                            <div class="light">Control The Webiste If There Is Maintenance</div>
+                        </div>
+                        <div class="holder p-20 p-t-0 box-flex-cl">
+                            <div class="bar d-flex d-flex-jcsb d-flex-aic">
+                                <div class="text">
+                                    <h4>Stie Control</h4>
+                                    <span>Open/Close Website And Type The Reason</span>
+                                </div>
+                                <div class="btn-slide p-relative">
+                                    <i class="fa-regular fa-circle-check on p-absolute"></i>
+                                    <i class="fa-regular fa-circle-xmark off p-absolute"></i>
+                                </div>
+                            </div>
+                            <textarea class="p-20" name="msg" placeholder="Close Message Content"></textarea>
+                        </div>
+                    </div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
