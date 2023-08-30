@@ -11,6 +11,9 @@
 .gap-10 {
     gap: 10px;
 }
+.gap-5 {
+    gap: 5px;
+}
 .d-flex {
     display: flex;
 }
@@ -78,6 +81,9 @@
 }
 .p-t-0 {
     padding-top: 0;
+}
+.p-holder {
+    padding: 10px 20px 20px;
 }
 .m-0 {
     margin: 0;

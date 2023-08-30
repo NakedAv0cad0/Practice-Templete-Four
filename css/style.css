@@ -1148,7 +1148,7 @@ body {
     /* mmm the content in for the pseudo-elemenst in input didnt shows up I tried icon text overlay, nothing works */
 }
 /* box 5 */
-.settings .box:nth-last-of-type(2) .clon label {
+label {
     cursor: pointer;
 }
 .settings .box:nth-last-of-type(2) .clon input {
@@ -1161,9 +1161,6 @@ body {
     height: 25px;
     width: 25px;
     z-index: 19;
-}
-.settings .box:nth-last-of-type(2) .clon .box {
-    /* position: relative; */
 }
 .settings .box:nth-last-of-type(2) .clon .check-box:hover .check-mark {
     background-color: #ccc;
@@ -1200,6 +1197,87 @@ body {
     transition: var(--delay);
     font-size: 0px;
     transform: rotate(-360deg);
+}
+/* box 6 */
+.settings .box:last-of-type .holder .clon:first-of-type input {
+    position: absolute;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+.settings .box:last-of-type .holder .clon:first-of-type input:checked ~ .radio-box::before {
+    visibility: visible;
+}
+.settings .box:last-of-type .holder .clon:first-of-type .radio:hover .radio-box {
+    background-color: #ccc;
+}
+.settings .box:last-of-type .holder .clon:first-of-type .radio input:checked ~ .radio-box {
+    background-color: var(--blue);
+}
+.settings .box:last-of-type .holder .clon:first-of-type .radio-box {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: var(--delay);
+}
+.settings .box:last-of-type .holder .clon:first-of-type .radio-box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    visibility: hidden;
+    transition: var(--delay);
+    transform: translate(-50%, -50%);
+}
+.settings .box:last-of-type .holder2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:567px) {
+    .settings .box:last-of-type .holder2 {
+        grid-template-columns: 1fr;
+    }
+}
+.settings .box:last-of-type .holder2 input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+.settings .box:last-of-type .holder2 .pilar span {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 1px solid var(--light-color);
+}
+.settings .box:last-of-type .holder2 .pilar:hover span {
+    border: 1px solid black;
+}
+.settings .box:last-of-type .holder2 .pilar i,
+.settings .box:last-of-type .holder2 .pilar p {
+    color: #3a3a3a;
+}
+.settings .box:last-of-type .holder2 .pilar:hover i,
+.settings .box:last-of-type .holder2 .pilar:hover p {
+    color: black;
+}
+.settings .box:last-of-type .holder2 .pilar input:checked ~ span {
+    border-color: var(--blue);
+}
+.settings .box:last-of-type .holder2 .pilar input:checked ~ i,
+.settings .box:last-of-type .holder2 .pilar input:checked ~ p {
+    color: var(--blue);
 }
 /* Animation */
 @keyframes doing {
