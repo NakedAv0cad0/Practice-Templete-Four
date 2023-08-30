@@ -60,12 +60,9 @@
                             <div class="bar d-flex d-flex-jcsb d-flex-aic">
                                 <div class="text">
                                     <h4>Stie Control</h4>
-                                    <span>Open/Close Website And Type The Reason</span>
+                                    <span class="light-black ph">Open/Close Website And Type The Reason</span>
                                 </div>
-                                <div class="btn-slide p-relative">
-                                    <i class="fa-solid fa-circle-check on p-absolute"></i>
-                                    <i class="fa-solid fa-circle-xmark off p-absolute"></i>
-                                </div>
+                                <div class="btn-slide p-relative"></div>
                             </div>
                             <textarea class="p-20" name="msg" placeholder="Close Message Content"></textarea>
                         </div>
@@ -75,19 +72,47 @@
                             <h2>General Info</h2>
                             <span class="light">General Information About Your Account</span>
                         </div>
-                        <form class="p-20 box-flex-cl" action="#">
+                        <form class="p-20-lr p-10-tb box-flex-cl" action="#">
                             <p>First Name</p>
-                            <input type="text" name="f-name" id="f-name" placeholder="First Name" class="p-5 fss -brr-5">
+                            <input type="text" name="f-name" id="f-name" placeholder="First Name" class="p-10 fss brr-5">
                             <p>Last Name</p>
-                            <input type="text" name="l-name" id="l-name" placeholder="Last Name" class="p-5 fss -brr-5">
+                            <input type="text" name="l-name" id="l-name" placeholder="Last Name" class="p-10 fss brr-5">
                             <p>Email</p>
                             <div class="clon d-flex d-flex-jcsb d-flex-10 d-flex-aic">
-                                <input type="mail" class="fss brr-5" placeholder="exemple@ss.com" readonly>
-                                <button>Change</button>
+                                <input type="mail" class="p-15 fss brr-10" placeholder="exemple@ss.com" readonly>
+                                <button class="btn">Change</button>
                             </div>
                         </form>
                     </div>
-                    <div class="box"></div>
+                    <div class="box">
+                        <div class="greeting">
+                            <h2>Security Info</h2>
+                            <span class="light">Security Information About Your Account</span>
+                        </div>
+                        <div class="holder box-flex-cl p-20-lr p-10-tb">
+                            <div class="clon d-flex d-flex-jcsb d-flex-aic p-10-tb">
+                                <div class="text">
+                                    <p class="fb p-5-tb">Password</p>
+                                    <span class="light-black fss">Last Change On 25/10/2021</span>
+                                </div>
+                                <button class="btn m-0">Change</button>
+                            </div>
+                            <div class="clon d-flex d-flex-jcsb d-flex-aic p-10-tb">
+                                <div class="text">
+                                    <p class="fb p-5-tb">Two-Factor Authentication</p>
+                                    <span class="light-black fss">Enable/Disable The Feature</span>
+                                </div>
+                                <div class="btn-slide p-relative"></div>
+                            </div>
+                            <div class="clon d-flex d-flex-jcsb d-flex-aic p-10-tb">
+                                <div class="text">
+                                    <p class="fb p-5-tb">Devices</p>
+                                    <span class="light-black fss">Check The Login Devices List</span>
+                                </div>
+                                <button class="btn">Devices</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="box"></div>
                     <div class="box"></div>
                     <div class="box"></div>

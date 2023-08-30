@@ -110,7 +110,7 @@ input:focus, textarea:focus {
         margin-bottom: 5px;
     }
 }
-.btn {
+.dashboard .btn {
     align-self: flex-end;
     width: fit-content;
     margin: 20px 20px 20px 0;
@@ -127,7 +127,7 @@ input:focus, textarea:focus {
         margin: 30px auto;
     }
 }
-.btn:hover {
+.dashboard.btn:hover {
     background-color: var(--blue-alt);
     color: white;
 }
@@ -143,6 +143,21 @@ input:focus, textarea:focus {
     .greeting h2 {
         font-size: 20px;
     }
+}
+.settings .btn {
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--checked);
+    padding: 5px;
+    border-radius: 5px;
+    transition: var(--delay);
+    margin: 0;
+}
+.settings .btn:hover {
+    background-color: var(--blue-alt);
+    color: white;
 }
 /* main Form */
 body {
@@ -1026,48 +1041,53 @@ body {
     color: black;
 }
 /* Settings */
-.settings .box:first-of-type .holder .bar .text span {
+/* .settings .box:first-of-type .holder .bar .text span {
     font-size: 14px;
     color: var(--light-color);
-}
-.settings .box:first-of-type .holder .bar .btn-slide {
+} */
+.btn-slide {
     width: 70px;
     height: 30px;
-    background-color: var(--blue);
     border-radius: 50px;
+    background-color: var(--blue);
     cursor: pointer;
     transition: var(--delay);
-    background-color: var(--blue);
 }
-.settings .box:first-of-type .holder .bar .btn-slide:hover {
+.btn-slide:hover {
     background-color: var(--border-color);
 }
-.settings .box:first-of-type .holder .bar .btn-slide .on, .settings .box:first-of-type .holder .bar .btn-slide .off {
-    top: 0px;
-    left: -0%;
-    font-size: 30px;
+.btn-slide::before,
+.btn-slide::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 1px;
+    right: 5%;      
+    font-size: 25px;
     border-radius: 50%;
     transition: var(--delay);
 }
-.settings .box:first-of-type .holder .bar .btn-slide .on {
+.btn-slide::before {
+    content: "\f058";
+    color: white;
+}
+.btn-slide:hover::before {
     z-index: 10;
-    color: var(--checked);
-}
-.settings .box:first-of-type .holder .bar .btn-slide:hover .on {
-    z-index: 1;
-    left: 100%;
-    transform: translateX(-100%);
-    visibility: hidden;
-}
-.settings .box:first-of-type .holder .bar .btn-slide .off {
-    z-index: 1;
+    right: 95%;
+    transform: translateX(100%);
     color: transparent;
 }
-.settings .box:first-of-type .holder .bar .btn-slide:hover .off {
+.btn-slide::after {
+    content: "\f057";
     z-index: 10;
-    left: 102%;
-    transform: translateX(-100%);
-    color: var(--blue);
+    color: transparent;
+}
+.btn-slide:hover::after {
+    z-index: 1;
+    right: 95%;
+    transform: translateX(100%);
+    color: white;
+
 }
 .settings .box:first-of-type .holder textarea {
     height: 200px;
@@ -1088,16 +1108,19 @@ body {
 .settings .box:nth-of-type(2) form .clon input {
     border: none;
     background-color: var(--section-background);
-    padding: 10px;
     cursor: not-allowed;
 }
 .settings .box:nth-of-type(2) form button {
-    border: none;
     background-color: transparent;
     color: var(--blue);
-    font-weight: 500;
-    margin-left: 20px;
-    cursor: pointer;
+}
+/* box 3 */
+.settings .box:nth-of-type(3) .clon:not(:last-child) {
+    border-bottom: 1px solid var(--section-background);
+}
+.settings .box:nth-of-type(3) .clon:last-child button {
+    background-color: var(--box-background);
+    color: black;
 }
 /* Animation */
 @keyframes doing {
