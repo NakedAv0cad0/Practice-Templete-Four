@@ -1145,6 +1145,61 @@ body {
 .settings .box:nth-of-type(4) .holder input:focus ~ i {
     color: black; 
     /* i should make the icons inside the input's before and after */
+    /* mmm the content in for the pseudo-elemenst in input didnt shows up I tried icon text overlay, nothing works */
+}
+/* box 5 */
+.settings .box:nth-last-of-type(2) .clon label {
+    cursor: pointer;
+}
+.settings .box:nth-last-of-type(2) .clon input {
+    /* position: absolute; */
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    z-index: 19;
+}
+.settings .box:nth-last-of-type(2) .clon .box {
+    /* position: relative; */
+}
+.settings .box:nth-last-of-type(2) .clon .check-box:hover .check-mark {
+    background-color: #ccc;
+    transition: var(--delay);
+}
+.settings .box:nth-last-of-type(2) .clon .check-box input:checked ~ .check-mark {
+    background-color: #2196F3;
+}
+.settings .box:nth-last-of-type(2) .clon .check-box input:checked ~ .check-mark::before {
+    visibility: visible;
+    color: white;
+    font-size: 16px;
+    transform: rotate(0deg);
+}
+.settings .box:nth-last-of-type(2) .clon .check-mark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    position: relative;
+}
+.settings .box:nth-last-of-type(2) .clon .check-mark::before {
+    position: absolute;
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: var(--delay);
+    font-size: 0px;
+    transform: rotate(-360deg);
 }
 /* Animation */
 @keyframes doing {
