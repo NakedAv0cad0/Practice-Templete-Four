@@ -809,6 +809,7 @@ body {
     margin-left: 30px;
     padding: 7px 0px 7px 20px;
     z-index: 1;
+    border-left: 2px solid var(--bg);
     cursor: context-menu;
 }
 .dashboard .box:nth-last-child(4) .holder .clon::before {
@@ -837,7 +838,7 @@ body {
     --delay: 0.2s;
     content: "";
     position: absolute;
-    left: 0;
+    left: -2px;
     top: 0;
     height: 100%;
     width: 2px;
@@ -1121,6 +1122,29 @@ body {
 .settings .box:nth-of-type(3) .clon:last-child button {
     background-color: var(--box-background);
     color: black;
+}
+/* box 4 */
+.settings .box:nth-of-type(4) .holder .clon {
+    border: 1px solid var(--border-color);
+}
+.settings .box:nth-of-type(4) .holder i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+.settings .box:nth-of-type(4) .holder .clon:hover i {
+    color: var(--color);
+}
+.settings .box:nth-of-type(4) .holder input {
+    border: none;
+    border-left: 1px solid var(--border-color);
+    caret-color: var(--color);
+    color: var(--color);
+    /* height: 100%; */
+}
+.settings .box:nth-of-type(4) .holder input:focus ~ i {
+    color: black; 
+    /* i should make the icons inside the input's before and after */
 }
 /* Animation */
 @keyframes doing {
