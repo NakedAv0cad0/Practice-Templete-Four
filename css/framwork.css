@@ -23,6 +23,9 @@
 .jcc {
     justify-content: center;
 }
+.jce {
+    justify-content: flex-end;
+}
 .jcsb {
     justify-content: space-between;
 }
@@ -34,6 +37,9 @@
 }
 .aie {
     align-items: flex-end;
+}
+.aisr {
+    align-items: stretch;
 }
 .acsb {
     align-content: space-between;
