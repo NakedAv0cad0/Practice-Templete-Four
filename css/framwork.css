@@ -26,11 +26,17 @@
 .jcsb {
     justify-content: space-between;
 }
+.jcse {
+    justify-content: space-evenly;
+}
 .aic {
     align-items: center;
 }
 .aie {
     align-items: flex-end;
+}
+.acsb {
+    align-content: space-between;
 }
 .page-grid {
     display: grid;
@@ -119,4 +125,8 @@
 }
 .brr-cercle {
     border-radius: 50%;
+}
+/* size */
+.w100 {
+    width: 100%;
 }
