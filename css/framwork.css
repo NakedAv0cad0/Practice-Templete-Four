@@ -25,6 +25,7 @@
 }
 .jce {
     justify-content: flex-end;
+    text-align: end;
 }
 .jcsb {
     justify-content: space-between;
@@ -131,6 +132,12 @@
 }
 .brr-cercle {
     border-radius: 50%;
+}
+.bb-light {
+    border-bottom: 1px solid #eee;
+}
+.bb-dark {
+    border-bottom: 1px solid var(--border-color);
 }
 /* size */
 .w100 {

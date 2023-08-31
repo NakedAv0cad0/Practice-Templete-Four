@@ -73,7 +73,7 @@ label {
 }
 /* Componenets */
 .container {
-    padding: 0 15px;
+    padding: 0 15px 15px;
     position: relative;
     max-width: 100%;
     /* left: var(--side-width); */
@@ -1358,6 +1358,9 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
+.profile .box:first-of-type .holder .pilar:last-of-type .clon:hover {
+    background-color: var(--checked);
+}
 .profile .box:first-of-type .holder .pilar:last-of-type .clon .hold .btn-slide {
     height: 20px;
 }
@@ -1373,8 +1376,23 @@ body {
     border-bottom-right-radius: 5px;
     cursor: context-menu;
 }
-.profile .box:nth-of-type(2) .holder .clon {
-    border-bottom: 1px solid #eee;
+/* box */
+@media (min-width:1140px) {
+    .profile .box:last-of-type {
+        grid-column: 2/4;
+    }
+}
+@media (max-width:567px) {
+    .profile .box:last-of-type .holder .clon {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile .box:last-of-type .holder .clon h5 {
+        text-align: center;
+    }
+}
+.profile .box:last-of-type .holder .clon .image {
+    width: 70px;
 }
 /* Animation */
 @keyframes doing {
