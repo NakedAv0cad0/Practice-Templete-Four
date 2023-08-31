@@ -1369,13 +1369,6 @@ body {
     font-size: 16px;
 }
 /* box 2 */
-.profile .box:nth-of-type(2) .holder .clon .skill {
-    background-color: var(--light-color);
-    color: white;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: context-menu;
-}
 /* box */
 @media (min-width:1140px) {
     .profile .box:last-of-type {
@@ -1393,6 +1386,43 @@ body {
 }
 .profile .box:last-of-type .holder .clon .image {
     width: 70px;
+}
+/* Projects */
+.projects .box .image {
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.projects .box .image:hover {
+    z-index: 2;
+}
+.projects .box .image:nth-of-type(2) {
+    left: -15px;
+}
+.projects .box .image:nth-of-type(3) {
+    left: -30px;
+}
+.projects .box .image:nth-of-type(4) {
+    left: -45px;
+}
+.projects .box .image:nth-of-type(5) {
+    left: -60px;
+}
+.projects .box .bar {
+    width: 200px;
+    height: 6px;
+    border-radius: 50px;
+    position: relative;
+    background-color: var(--section-background  );
+}
+.projects .box .bar::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: var(--range);
+    background-color: var(--color);
+    border-radius: inherit;
 }
 /* Animation */
 @keyframes doing {
