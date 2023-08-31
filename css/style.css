@@ -60,6 +60,9 @@ input, textarea {
 input:focus, textarea:focus {
     outline: none;
 }
+label {
+    cursor: pointer;
+}
 .bordered-input:focus {
     opacity: 0;
 }
@@ -159,6 +162,71 @@ input:focus, textarea:focus {
     background-color: var(--blue-alt);
     color: white;
 }
+
+.btn-slide {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+}
+.btn-slide input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+.effect {
+    width: 70px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: var(--delay);
+}
+.btn-slide input:checked ~ .effect {
+    background-color: var(--border-color);
+}
+.effect::before,
+.effect::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 1px;
+    right: 5%;      
+    font-size: 25px;
+    border-radius: 50%;
+    transition: var(--delay);
+}
+.effect::before {
+    content: "\f058";
+    color: white;
+}
+.btn-slide input:checked ~ .effect::before {
+    z-index: 10;
+    right: 95%;
+    transform: translateX(100%);
+    color: transparent;
+}
+.effect::after {
+    content: "\f057";
+    z-index: 10;
+    color: transparent;
+}
+.btn-slide input:checked ~ .effect::after {
+    z-index: 1;
+    right: 95%;
+    transform: translateX(100%);
+    color: white;
+
+}
+/* code: 
+    <div class="btn-slide">
+        <input type="checkbox" name="test" id="test" checked>
+        <div class="effect"></div>
+    </div> */
 /* main Form */
 body {
     background-color: var(--section-background);
@@ -1046,50 +1114,6 @@ body {
     font-size: 14px;
     color: var(--light-color);
 } */
-.btn-slide {
-    width: 70px;
-    height: 30px;
-    border-radius: 50px;
-    background-color: var(--blue);
-    cursor: pointer;
-    transition: var(--delay);
-}
-.btn-slide:hover {
-    background-color: var(--border-color);
-}
-.btn-slide::before,
-.btn-slide::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    position: absolute;
-    top: 1px;
-    right: 5%;      
-    font-size: 25px;
-    border-radius: 50%;
-    transition: var(--delay);
-}
-.btn-slide::before {
-    content: "\f058";
-    color: white;
-}
-.btn-slide:hover::before {
-    z-index: 10;
-    right: 95%;
-    transform: translateX(100%);
-    color: transparent;
-}
-.btn-slide::after {
-    content: "\f057";
-    z-index: 10;
-    color: transparent;
-}
-.btn-slide:hover::after {
-    z-index: 1;
-    right: 95%;
-    transform: translateX(100%);
-    color: white;
-
-}
 .settings .box:first-of-type .holder textarea {
     height: 200px;
     resize: none;
@@ -1148,9 +1172,6 @@ body {
     /* mmm the content in for the pseudo-elemenst in input didnt shows up I tried icon text overlay, nothing works */
 }
 /* box 5 */
-label {
-    cursor: pointer;
-}
 .settings .box:nth-last-of-type(2) .clon input {
     /* position: absolute; */
     opacity: 0;
