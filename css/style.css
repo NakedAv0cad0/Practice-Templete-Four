@@ -270,8 +270,8 @@ body {
     align-items: center;
 }
 .sidebar .bar .logo {
-    margin: 10px auto 50px;
-    font-size: 18px;
+    margin: 20px auto 50px;
+    font-size: 20px;
     font-weight: 700;
     position: relative;
     display: block;
@@ -1425,15 +1425,6 @@ body {
     border-radius: inherit;
 }
 /* Courses */
-.courses {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    background-image: ('/images/course-01.jpg');
-}
-@media (max-width:800px) {
-    .courses {
-        grid-template-columns: 1fr;
-    }
-}
 .courses .box .win {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1442,7 +1433,7 @@ body {
 }
 @media (max-width:424px) {
     .courses .box .win {
-        background-size: contain;
+        height: 210px;
     }
 }
 .courses .box:hover .win {
@@ -1462,6 +1453,53 @@ body {
 }
 .courses .box:hover .holder .clon .ss-box {
     background-color: var(--blue);
+}
+/* Friends */
+.friends .vip-member {
+    transition: var(--delay);
+    outline: 1px solid transparent;
+}
+.friends .vip-member:hover {
+    outline: 1px solid var(--yellow);
+}
+.friends .box i {
+    background-color: var(--box-background);
+    opacity: 0.5;
+}
+.friends .box i:hover {
+    opacity: 1;
+}
+.friends .box ul li::before {
+    position: absolute;
+    content: var(--icon);
+    font-family: "Font Awesome 5 Free";
+    left: -5px;
+    font-weight: var(--icon-w);
+}
+.friends .box .win .image {
+    width: 100px;
+}
+.friends .box .vip {
+    color:var(--yellow);
+    font-size:40px;
+    opacity:0.15
+}
+.friends .box:hover .vip {
+    opacity: 0.7;
+}
+.friends .box .pilar .button {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 900;
+    background-color: var(--bg);
+    color: black;
+    transition: var(--delay);
+    font-size: 14px;
+    cursor: pointer;
+}
+.friends .box .pilar .button:hover {
+    background-color: var(--bgh);
+    color: white;
 }
 /* Animation */
 @keyframes doing {
