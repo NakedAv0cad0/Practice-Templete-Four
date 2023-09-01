@@ -1501,6 +1501,69 @@ body {
     background-color: var(--bgh);
     color: white;
 }
+/* Files */
+@media (max-width:1015px) {
+    .files {
+        flex-direction: column;
+    }
+}
+.files .file-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+.files .file-holder i:hover {
+    color: black;
+}
+.files .file-holder .image {
+    width: 70px;
+    transition: var(--delay);
+}
+.files .file-holder .box:hover .image {
+    transform: rotate(10deg);
+}
+.files .file-holder .image, .files .file-holder .caption {
+    transition: var(--delay);
+}
+.files .file-holder .image, .files .file-holder .caption:hover, 
+.files .file-holder .image, .files .file-holder .image:hover ~ .caption {
+    font-weight: bold;
+}
+.files > .box {
+    height: fit-content;
+}
+@media (max-width:1015px) {
+    .files > .box {
+        order: -1;
+    }
+}
+.files .box .statistic {
+    min-width: 300px;
+}
+@media (max-width:1015px) {
+    .files .box .statistic {
+        min-width: none;
+    }
+}
+.files .box .statistic .holder .clon i {
+    color: var(--color);
+    height: 35px;
+    width: 35px;
+    background-color: var(--bg);
+}
+.files .box .statistic .holder .upload {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+}
+.files .box .statistic .holder .upload:hover {
+    background-color: var(--blue-alt);
+}
+.files .box .statistic .holder .upload:hover i {
+    animation: up-down var(--delay) infinite alternate;
+}
 /* Animation */
 @keyframes doing {
     0% {
@@ -1508,5 +1571,10 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes up-down {
+    100% {
+        transform: translateY(-5px);
     }
 }
