@@ -52,8 +52,8 @@
             <div class="container">
                 <div class="dashboard page-grid" id="dashboard">
                     <div class="box">
-                        <div class="win-1">
-                            <div class="greeting">
+                        <div class="win-1 p-20 p-relative d-flex jcsb">
+                            <div class="greeting m-0">
                             <h2>Welcome</h2>    
                                 <span class="light">Elzero</span>
                             </div>
@@ -61,65 +61,65 @@
                                 <img src="images/welcome.png" alt="profile">
                             </div>
                         </div>
-                        <div class="win-2">
-                            <div class="image">
-                                <img src="images/profile.png" alt="profile">
+                        <div class="win-2 p-relative d-flex-cl jcc bg-white">
+                            <div class="image p-absolute d-flex p-5 bg-white brr-cercle t-0">
+                                <img class="w100" src="images/profile.png" alt="profile">
                             </div>
-                            <div class="info">
-                                <div class="clon">
-                                    <p>Elzero</p>
-                                    <span class="light">Developer</span>
+                            <div class="info d-flex jcse p-20">
+                                <div class="clon d-flex-cl aic gap-5">
+                                    <p class="ph">Elzero</p>
+                                    <span class="ph light-black">Developer</span>
                                 </div>
-                                <div class="clon">
-                                    <p>80</p>
-                                    <span class="light">Project</span>
+                                <div class="clon d-flex-cl aic gap-5">
+                                    <p class="ph m-15-t">80</p>
+                                    <span class="ph light-black">Project</span>
                                 </div>
-                                <div class="clon">
-                                    <p>&dollar;8500</p>
-                                    <span class="light">Earned</span>
+                                <div class="clon d-flex-cl aic gap-5">
+                                    <p class="ph m-15-t">&dollar;8500</p>
+                                    <span class="ph light-black">Earned</span>
                                 </div>
                             </div>
                             <button class="btn">Profile</button>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex-cl">
                         <div class="greeting">
                             <h2>Quick Draft</h2>
                             <span class="light">Write A Draft For Your Ideas</span>
                         </div>
-                        <form action="#">
-                            <input type="text" placeholder="Title">
-                            <textarea name="ideas" placeholder="Your Thought"></textarea>
+                        <form class="flex-1 d-flex-cl aisr p-20" action="#">
+                            <input class="b-none p-10 ph" type="text" placeholder="Title">
+                            <textarea class="b-none p-10 ph m-10-t" name="ideas" placeholder="Your Thought"></textarea>
                         </form>
                         <button class="btn">Save</button>
                     </div>
-                    <div class="box">
+                    <div class="box d-flex-cl gap-10">
                         <div class="greeting">
                             <h2>Yearly Targets</h2>
                             <span class="light">Targets Of The Year</span>
                         </div>
-                            <div  style="--range: 80%;--value: '80%'; --color: var(--blue); --bg: var(--light-blue)" class="clon">
-                                <div class="holder"><i class="fa-solid fa-dollar-sign"></i></div> 
-                                <div class="bar">
+                            <div  style="--range: 80%;--value: '80%'; --color: var(--blue); --bg: var(--light-blue)" class="clon d-flex jcc aic gap-20 p-20-lr">
+                                <div class="holder p-relative d-flex jcc aic --bg z-1"><i class="--color fa-solid fa-dollar-sign"></i></div> 
+                                <div class="bar flex-1 d-flex-cl assr">
                                     <span class="light">Mony</span>
-                                    <p>&dollar;20.000</p>
-                                    <div class="range"><span></span></div>
+                                    <p class="fb">&dollar;20.000</p>
+                                    <div class="range --bg p-relative m-10-t z-1"><span class="db h100"></span></div>
                                 </div>
                             </div>
-                            <div style="--range: 55%; --value: '55%'; --color: var(--yellow); --bg: var(--light-yellow)" class="clon">
-                                <div class="holder"><i class="fa-solid fa-code"></i></div> 
-                                <div class="bar">
+                            <div style="--range: 55%; --value: '55%'; --color: var(--yellow); --bg: var(--light-yellow)" class="clon d-flex jcc aic gap-20 p-20-lr">
+                                <div class="holder p-relative d-flex jcc aic --bg z-1"><i class="--color fa-solid fa-code"></i></div> 
+                                <div class="bar flex-1 d-flex-cl assr">
                                     <span class="light">Projects</span>
-                                    <p>24</p>
-                                    <div class="range"><span></span></div>
+                                    <p class="fb">24</p>
+                                    <div class="range --bg p-relative m-10-t z-1"><span class="db h100"></span></div>
                                 </div>
                             </div>
-                            <div style="--range: 75%;--value: '75%'; --color: var(--green); --bg: var(--light-green)" class="clon">
-                                <div class="holder"><i class="fa-regular fa-user"></i></div> 
-                                <div class="bar">
+                            <div style="--range: 75%;--value: '75%'; --color: var(--green); --bg: var(--light-green)" class="clon d-flex jcc aic gap-20 p-20-lr p-10-b">
+                                <div class="holder p-relative d-flex jcc aic --bg z-1"><i class="--color fa-regular fa-user"></i></div> 
+                                <div class="bar flex-1 d-flex-cl assr">
                                     <span class="light">Team</span>
-                                    <p>12</p>
-                                    <div class="range"><span></span></div>
+                                    <p class="fb">12</p>
+                                    <div class="range --bg p-relative m-10-t z-1"><span class="db h100"></span></div>
                                 </div>
                             </div>
                     </div>
@@ -128,26 +128,26 @@
                             <h2>Tickets Statistics</h2>
                             <div class="light">Everything About Support Tickets</div>
                         </div>
-                        <div class="frame">
-                            <div class="clon">
+                        <div class="frame d-grid gap-10 p-20">
+                            <div class="clon d-flex-cl jcc aic gap-10 b-dark p-20 brr-10">
                                 <i class="fa-regular fa-newspaper" style="color: #d38c12;"></i>
-                                <span>2500</span>
-                                <div class="light">Total</div>
+                                <span class="fb">2500</span>
+                                <div class="ph light-black">Total</div>
                             </div>
-                            <div class="clon">
+                            <div class="clon d-flex-cl jcc aic gap-10 b-dark p-20 brr-10">
                                 <i class="fa-solid fa-spinner" style="color: #005eff;"></i>
-                                <span>500</span>
-                                <div class="light">Pending</div>
+                                <span class="fb">500</span>
+                                <div class="ph light-black">Pending</div>
                             </div>
-                            <div class="clon">
+                            <div class="clon d-flex-cl jcc aic gap-10 b-dark p-20 brr-10">
                                 <i class="fa-regular fa-circle-check" style="color: #00ff2a;"></i>
-                                <span>1900</span>
-                                <div class="light">Closed</div>
+                                <span class="fb">1900</span>
+                                <div class="ph light-black">Closed</div>
                             </div>
-                            <div class="clon">
+                            <div class="clon d-flex-cl jcc aic gap-10 b-dark p-20 brr-10">
                                 <i class="fa-regular fa-rectangle-xmark" style="color: #ff3333;"></i>
-                                <span>100</span>
-                                <div class="light">Deleted</div>
+                                <span class="fb">100</span>
+                                <div class="ph light-black">Deleted</div>
                             </div>
                         </div>
                     </div>
@@ -155,38 +155,38 @@
                         <div class="greeting">
                             <h2>Last News</h2>
                         </div>
-                        <div class="holder">
-                            <div class="clon">
-                                <div class="image"><img src="/images/news-01.png" alt="news1"></div>
+                        <div class="holder d-flex-cl">
+                            <div class="clon d-flex aic jcsb p-20 gap-10 bb-light p-20-b">
+                                <div class="image"><img class="brr-10 w-100" src="/images/news-01.png" alt="news1"></div>
                                 <div class="text">
                                     <p>Created SASS Section</p>
                                     <span class="light">New SASS Examples & Tutorials</span>
                                 </div>
-                                <span class="date">3 Days Ago</span>
+                                <span class="date fss light-black p-5 db brr-5">3 Days Ago</span>
                             </div>
-                            <div class="clon">
-                                <div class="image"><img src="/images/news-02.png" alt="news2"></div>
+                            <div class="clon d-flex aic jcsb p-20 gap-10 bb-light p-20-b">
+                                <div class="image"><img class="brr-10 w-100" src="/images/news-02.png" alt="news2"></div>
                                 <div class="text">
                                     <p>Changed The Design</p>
                                     <span class="light">A Brand New Website Design</span>
                                 </div>
-                                <span class="date">5 Days Ago</span>
+                                <span class="date fss p-5 db brr-5">5 Days Ago</span>
                             </div>
-                            <div class="clon">
-                                <div class="image"><img src="/images/news-03.png" alt="news3"></div>
+                            <div class="clon d-flex aic jcsb p-20 gap-10 bb-light p-20-b">
+                                <div class="image"><img class="brr-10 w-100" src="/images/news-03.png" alt="news3"></div>
                                 <div class="text">
                                     <p>Team Increased</p>
                                     <span class="light">3 Developers Joined The Team</span>
                                 </div>
-                                <span class="date">7 Days Ago</span>
+                                <span class="date fss light-black p-5 db brr-5">7 Days Ago</span>
                             </div>
-                            <div class="clon">
-                                <div class="image"><img src="/images/news-04.png" alt="news4"></div>
+                            <div class="clon d-flex aic jcsb p-20 gap-10">
+                                <div class="image"><img class="brr-10 w-100" src="/images/news-04.png" alt="news4"></div>
                                 <div class="text">
                                     <p>Added Payment Gateway</p>
                                     <span class="light">Many New Payment Gateways Added</span>
                                 </div>
-                                <span class="date">9 Days Ago</span>
+                                <span class="date fss light-black p-5 db brr-5">9 Days Ago</span>
                             </div>
                         </div>
                     </div>
@@ -194,41 +194,41 @@
                         <div class="greeting">
                             <h2>Latest Tasks</h2>
                         </div>
-                        <div class="holder">
-                            <div class="clon">
+                        <div class="holder d-flex-cl aisb gap-10 p-20">
+                            <div class="clon bb-light p-10-b d-flex jcsb aic">
                                 <div class="text">
                                     <h4>Record One New Video</h4>
-                                    <p>Record Python Create Exe Project</p>
+                                    <p class="light-black ph m-10-tb">Record Python Create Exe Project</p>
                                 </div>
-                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-regular fa-trash-can cp td"></i>
                             </div>
-                            <div class="clon">
+                            <div class="clon bb-light p-10-b d-flex jcsb aic">
                                 <div class="text">
                                     <h4>Write Article</h4>
-                                    <p>Write Low Level vs High Level Languages</p>
+                                    <p class="light-black ph m-10-tb">Write Low Level vs High Level Languages</p>
                                 </div>
-                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-regular fa-trash-can cp td"></i>
                             </div>
-                            <div class="clon">
+                            <div class="clon bb-light p-10-b d-flex jcsb aic">
                                 <div class="text">
                                     <h4>Finish Project</h4>
-                                    <p>Publish Academy Programming Project</p>
+                                    <p class="light-black ph m-10-tb">Publish Academy Programming Project</p>
                                 </div>
-                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-regular fa-trash-can cp td"></i>
                             </div>
-                            <div class="clon deleted">
+                            <div class="clon deleted bb-light p-10-b d-flex jcsb aic">
                                 <div class="text">
                                     <h4>Attend The Meeting</h4>
-                                    <p>Attend The Project Business Analysis Meeting</p>
+                                    <p class="light-black ph m-10-tb">Attend The Project Business Analysis Meeting</p>
                                 </div>
-                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-regular fa-trash-can cp td"></i>
                             </div>
-                            <div class="clon">
+                            <div class="clon d-flex jcsb aic">
                                 <div class="text">
                                     <h4>Finish Lesson</h4>
-                                    <p>Finish Teaching Flex Box</p>
+                                    <p class="light-black ph m-10-tb">Finish Teaching Flex Box</p>
                                 </div>
-                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-regular fa-trash-can cp td"></i>
                             </div>
                         </div>
                     </div>
@@ -236,33 +236,33 @@
                         <div class="greeting">
                             <h2>Top Search Items</h2>
                         </div>
-                        <div class="holder">
-                            <div class="clon">
-                                <h4>Keyword</p>
+                        <div class="holder d-flex-cl gap-20 p-20">
+                            <div class="clon d-flex jcsb aic">
+                                <h4>Keyword</h4>
                                 <h4>Search Count</h4>
                             </div>
-                            <div class="clon">
-                                <p class="light">Programming</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">Programming</p>
                                 <span class="date">220</span>
                             </div>
-                            <div class="clon">
-                                <p class="light">JavaScript</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">JavaScript</p>
                                 <span class="date">180</span>
                             </div>
-                            <div class="clon">
-                                <p class="light">PHP</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">PHP</p>
                                 <span class="date">160</span>
                             </div>
-                            <div class="clon">
-                                <p class="light">Code</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">Code</p>
                                 <span class="date">145</span>
                             </div>
-                            <div class="clon">
-                                <p class="light">Design</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">Design</p>
                                 <span class="date">110</span>
                             </div>
-                            <div class="clon">
-                                <p class="light">Logic</p>
+                            <div class="clon d-flex jcsb aic">
+                                <p class="ph m-5-tb">Logic</p>
                                 <span class="date">95</span>
                             </div>
                         </div>
@@ -271,105 +271,105 @@
                         <div class="greeting">
                             <h2>Latest Uploads</h2>
                         </div>
-                        <div class="holder">
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/pdf.svg" alt="pdf"></div>
+                        <div class="holder d-flex-cl gap-5 p-20">
+                            <div class="clon d-flex jcsb aic bb-light">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/pdf.svg" alt="pdf"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>2.9mb</span></div>
                             </div>
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/avi.svg" alt="avi"></div>
+                            <div class="clon d-flex jcsb aic bb-light">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/avi.svg" alt="avi"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>1.5mb</span></div>
                             </div>
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/psd.svg" alt="psd"></div>
+                            <div class="clon d-flex jcsb aic bb-light">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/psd.svg" alt="psd"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>4.6mb</span></div>
                             </div>
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/zip.svg" alt="zip"></div>
+                            <div class="clon d-flex jcsb aic bb-light">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/zip.svg" alt="zip"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>8.8mb</span></div>
                             </div>
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/dll.svg" alt="dll"></div>
+                            <div class="clon d-flex jcsb aic bb-light">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/dll.svg" alt="dll"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>6.1mb</span></div>
                             </div>
-                            <div class="clon">
-                                <div class="main">
-                                    <div class="image"><img src="/images/eps.svg" alt="eps"></div>
+                            <div class="clon d-flex jcsb aic">
+                                <div class="main d-flex jcc aic gap-10">
+                                    <div class="image"><img class="w100" src="/images/eps.svg" alt="eps"></div>
                                     <div class="text">
-                                        <p>my-file</p>
-                                        <span class="light">Elzero</span>
+                                        <p class="fw-600">my-file</p>
+                                        <span class="light-black fss">Elzero</span>
                                     </div>
                                 </div>
                                 <div class="date"><span>4.1mb</span></div>
                             </div>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box p-relative">
                         <div class="greeting">
                             <h2>Last Project Progress</h2>
                         </div>
-                        <div class="image"><img src="/images/project.png" alt="rocket"></div>
-                        <div class="holder">
-                            <div class="line"></div>
-                            <div class="text">
-                                <p class="done">Got The Project</p>
-                                <p class="done">Started The Project</p>
-                                <p class="done">The Project About To Finish</p>
-                                <p class="doing">Test The Project</p>
-                                <p class="not-started">Finish The Project & Get Money</p>
+                        <div class="image p-absolute r-0"><img class="w-100" src="/images/project.png" alt="rocket"></div>
+                        <div class="holder d-flex jcs p-20">
+                            <div class="line m-20-l"></div>
+                            <div class="text d-flex-cl">
+                                <p class="done p-relative d-flex fw-600">Got The Project</p>
+                                <p class="done p-relative d-flex fw-600">Started The Project</p>
+                                <p class="done p-relative d-flex fw-600">The Project About To Finish</p>
+                                <p class="doing p-relative d-flex fw-600">Test The Project</p>
+                                <p class="not-started p-relative d-flex fw-600">Finish The Project & Get Money</p>
                             </div>
                         </div>
                     </div>
                     <div class="box">
-                        <div class="holder">
+                        <div class="holder d-flex-cl p-20 gap-15">
                             <div class="greeting">
                                 <h2>Reminders</h2>
                             </div>
-                            <div  style="--bg: var(--blue); --bgl: var(--light-blue)" class="clon">
-                                <h4>Check My Tasks List</h4>
-                                <span class="disc">28/09/2022 - 12:00am</span>
+                            <div  style="--bg: var(--blue); --bgl: var(--light-blue)" class="clon p-relative z-1">
+                                <h4 class="td">Check My Tasks List</h4>
+                                <span class="disc db m-10-t td">28/09/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--red); --bgl: var(--light-red)" class="clon">
-                                <h4>Check My Projects</h4>
-                                <span class="disc">26/10/2022 - 12:00am</span>
+                            <div style="--bg: var(--red); --bgl: var(--light-red)" class="clon p-relative z-1">
+                                <h4 class="td">Check My Projects</h4>
+                                <span class="disc db m-10-t td">26/10/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--green); --bgl: var(--light-green)" class="clon">
-                                <h4>Call All My Clients</h4>
-                                <span class="disc">10/11/2022 - 12:00am</span>
+                            <div style="--bg: var(--green); --bgl: var(--light-green)" class="clon p-relative z-1">
+                                <h4 class="td">Call All My Clients</h4>
+                                <span class="disc db m-10-t td">10/11/2022 - 12:00am</span>
                             </div>
-                            <div style="--bg: var(--yellow); --bgl: var(--light-yellow)" class="clon">
-                                <h4>Finish The Development Workshop</h4>
-                                <span class="disc">08/01/2023 - 12:00am</span>
+                            <div style="--bg: var(--yellow); --bgl: var(--light-yellow)" class="clon p-relative z-1">
+                                <h4 class="td">Finish The Development Workshop</h4>
+                                <span class="disc db m-10-t td">08/01/2023 - 12:00am</span>
                             </div>
                         </div>
                     </div>
@@ -377,23 +377,23 @@
                         <div class="greeting">
                             <h2>Latest Post</h2>
                         </div>
-                        <div class="holder">
-                            <div class="top">
-                                <div class="image"><img src="/images/profile.png" alt="profile"></div>
+                        <div class="holder d-flex-cl gap-20">
+                            <div class="top d-flex gap-20 p-20">
+                                <div class="image"><img class="w100" src="/images/profile.png" alt="profile"></div>
                                 <div class="text">
                                     <h4>Osama Elzero</h4>
-                                    <span>About 3Hour Ago</span>
+                                    <span class="light-black ph">About 3Hour Ago</span>
                                 </div>
                             </div>
-                            <div class="middle">
-                                <p>You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
+                            <div class="middle lh-6 p-20 fw-600 bb-light">
+                                <p class="ph">You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
                             </div>
-                            <div class="bottom">
-                                <div class="clon">
+                            <div class="bottom d-flex jcsb p-20">
+                                <div class="clon d-flex ais gap-10 jcc h-fit light-black">
                                     <i class="fa-regular fa-heart"></i>
                                     <span>1.8K</span>
                                 </div>
-                                <div class="clon">
+                                <div class="clon d-flex ais gap-10 jcc h-fit light-black">
                                     <i class="fa-regular fa-comments"></i>
                                     <span>500</span>
                                 </div>
@@ -404,26 +404,26 @@
                         <div class="greeting">
                             <h2>Social Media Stats</h2>
                         </div>
-                        <div class="holder">
-                            <div style="--color: #1da1f2" class="clon">
-                                <i class="fa-brands fa-twitter"></i>
-                                <p>90K Followers</p>
-                                <button>Follow</button>
+                        <div class="holder d-flex-cl gap-10 p-20">
+                            <div style="--color: #1da1f2" class="clon d-flex aisr">
+                                <i class="jcc aic white fa-brands fa-twitter"></i>
+                                <p class="flex-1 p-10-lr p-relative d-flex aic z-1 white fw-600">90K Followers</p>
+                                <button class="white fb cp p-relative td">Follow</button>
                             </div>
-                            <div style="--color: #1877f2" class="clon">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <p>2M Like</p>
-                                <button>Like</button>
+                            <div style="--color: #1877f2" class="clon d-flex aisr">
+                                <i class="jcc aic white fa-brands fa-facebook-f"></i>
+                                <p class="flex-1 p-10-lr p-relative d-flex aic z-1 white fw-600">2M Like</p>
+                                <button class="white fb cp p-relative td">Like</button>
                             </div>
-                            <div style="--color: #ff0000" class="clon">
-                                <i class="fa-brands fa-youtube"></i>
-                                <p>2M Like</p>
-                                <button>1M Subs</button>
+                            <div style="--color: #ff0000" class="clon d-flex aisr">
+                                <i class="jcc aic white fa-brands fa-youtube"></i>
+                                <p class="flex-1 p-10-lr p-relative d-flex aic z-1 white fw-600">2M Like</p>
+                                <button class="white fb cp p-relative td">Subs</button>
                             </div>
-                            <div style="--color: #0a66c2" class="clon">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                                <p>70K Followers</p>
-                                <button>Follow</button>
+                            <div style="--color: #0a66c2" class="clon d-flex aisr">
+                                <i class="jcc aic white fa-brands fa-linkedin-in"></i>
+                                <p class="flex-1 p-10-lr p-relative d-flex aic z-1 white fw-600">70K Followers</p>
+                                <button class="white fb cp p-relative td">Follow</button>
                             </div>
                         </div>
                     </div>
@@ -431,98 +431,98 @@
                         <div class="greeting">
                             <h2>Projects</h2>
                         </div>
-                        <div class="holder">
-                            <table>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Finish Date</th>
-                                    <th>Client</th>
-                                    <th>Price</th>
-                                    <th>Team</th>
-                                    <th>Status</th>
+                        <div class="holder p-20">
+                            <table class="w100 p-20">
+                                <tr class="td">
+                                    <th class="p-20-lr b-light">Name</th>
+                                    <th class="p-20-lr b-light">Finish Date</th>
+                                    <th class="p-20-lr b-light">Client</th>
+                                    <th class="p-20-lr b-light">Price</th>
+                                    <th class="p-20-lr b-light">Team</th>
+                                    <th class="p-20-lr b-light">Status</th>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Ministry Wikipedia</td>
                                     <td>10 May 2022</td>
                                     <td>Ministry</td>
                                     <td>&dollar;5300</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-01.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-02.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-03.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-04.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-yellow)">Pending</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-yellow)">Pending</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Elzero Shop</td>
                                     <td>12 Oct 2021</td>
                                     <td>Elzero Company</td>
                                     <td>&dollar;1500</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-01.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-02.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-04.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-blue)">In Progress</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-blue)">In Progress</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Bouba App</td>
                                     <td>05 Sep 2021</td>
                                     <td>Bouba</td>
                                     <td>&dollar;800</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-02.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-04.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-green)">Completed</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-green)">Completed</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Mahmoud Website</td>
                                     <td>22 May 2021</td>
                                     <td>Mahmoud</td>
                                     <td>&dollar;600</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-03.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-04.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-green)">Completed</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-green)">Completed</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Sayed Website</td>
                                     <td>24 May 2021</td>
                                     <td>Sayed</td>
                                     <td>&dollar;300</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-01.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-02.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-red)">Rejected</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-red)">Rejected</span></td>
                                 </tr>
-                                <tr>
+                                <tr class="td">
                                     <td>Arena Application</td>
                                     <td>01 Mar 2021</td>
                                     <td>Arena Company</td>
                                     <td>&dollar;2600</td>
                                     <td>
-                                        <div class="holder">
+                                        <div class="holder d-flex">
                                             <div class="image"><img src="/images/team-01.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-02.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-03.png" alt="team-member"></div>
                                             <div class="image"><img src="/images/team-04.png" alt="team-member"></div>
                                         </div>
                                     </td>
-                                    <td><span style="--bg: var(--light-green)">Completed</span></td>
+                                    <td><span class="--bg d-flex jcc aic fb black" style="--bg: var(--light-green)">Completed</span></td>
                                 </tr>
                             </table>
                         </div>
