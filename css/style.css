@@ -245,6 +245,7 @@ body {
     background-color: var(--section-background);
     position: relative;
     display: flex;
+    min-height: 100vh;
     /* grid-template-areas: 'side head'
                         'side dash'; */
 }
@@ -1249,6 +1250,52 @@ body {
 }
 .files .box .statistic .holder .upload:hover i {
     animation: up-down var(--delay) infinite alternate;
+}
+/* Plans */
+.plans {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width:1154px) {
+    .plans {
+        grid-template-columns: 1fr;
+    }
+}
+.plans .box .main {
+    height: 150px;
+}
+.plans .box .main .overlay {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    border: 3px solid white;
+}
+.plans .box .main span.fb {
+    font-size: 25px;
+}
+.plans .box .main span.price {
+    font-size: 40px;
+}
+.plans .box .main span.coin {
+    left: -20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.plans .box ul li:hover {
+    background-color: var(--section-background);
+}
+.plans .box ul li .detail:hover {
+    color: black;
+}
+.plans .box ul li .x {
+    color: var(--red);
+}
+.plans .box button {
+    border: 2.5px solid transparent;
+}
+.plans .box button:hover {
+    border: 2.5px solid var(--border-color);
 }
 /* Animation */
 @keyframes doing {
