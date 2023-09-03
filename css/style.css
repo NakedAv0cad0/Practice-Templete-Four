@@ -165,7 +165,6 @@ label {
     cursor: pointer;
     font-weight: 500;
     background-color: var(--blue);
-    color: var(--checked);
     padding: 5px;
     border-radius: 5px;
     transition: var(--delay);
@@ -173,7 +172,6 @@ label {
 }
 .settings .btn:hover {
     background-color: var(--blue-alt);
-    color: white;
 }
 
 .btn-slide {
@@ -276,7 +274,7 @@ body {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 .sidebar .bar .logo {
     margin: 20px auto 50px;
@@ -318,31 +316,43 @@ body {
     }
 }
 .sidebar .bar .links {
-    flex: 1;
-    align-self: stretch;
-    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 10px;
+}
+.sidebar .bar .links li {
+    padding: 5px 0 5px 20px;
 }
 .sidebar .bar .links .link {
     position: relative;
-    height: 35px;
-    max-width: 100%;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    border-radius: 5px;
+}
+.sidebar .bar .links .link p {
+    padding: 10px 0 10px 40px;
+    font-size: 14px;
+    width: 120px;
+    border-radius: 5x;
+}
+@media (max-width: 991px) {
+    .sidebar .bar .links li {
+        padding: 5px 0 5px 10px;
+    }
+    .sidebar .bar .links .link p {
+        padding: 10px 0 10px 40px;
+        width: 90px;
+    }
 }
 @media (max-width: 767px) {
     .sidebar .bar .links .link {
-        margin-bottom: 0;
-        padding-left: 0;
+        display: block;
+        height: 35px;
+        width: 37px;
     }
     .sidebar .bar .links .link p {
         display: none;
     }
 }
-.sidebar .bar .links .link:hover, .sidebar .bar .links .checked {
+.sidebar .bar .links p:hover, .sidebar .bar .links .link:hover, .sidebar .bar .links .checked {
     background-color: var(--checked);
 }
 .sidebar .bar .links .link::before {
@@ -350,9 +360,9 @@ body {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
-    left: 15px;
+    left: 5px;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     color: black;
     cursor: pointer;
 }
@@ -546,12 +556,6 @@ body {
     font-size: 27px;
 }
 /* box 4 */
-/* .dashboard .box:nth-of-type(5) .holder .clon .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-} */
 @media (max-width:576px) {
     .dashboard .box:nth-of-type(5) .holder .clon {
         flex-direction: column;
@@ -811,21 +815,11 @@ body {
 .settings .box:first-of-type .holder textarea {
     height: 200px;
     resize: none;
-    border: none;
     background-color: var(--box-background);
     caret-color: var(--blue);
-    font-size: 14px;
 }
 /* box 2 */
-.settings .box:nth-of-type(2) form  input {
-    background-color: white;
-    border: none;
-    flex: 1;
-    color: var(--light-color);
-    border: 1px solid var(--light-color);
-}
 .settings .box:nth-of-type(2) form .clon input {
-    border: none;
     background-color: var(--section-background);
     cursor: not-allowed;
 }
@@ -834,50 +828,30 @@ body {
     color: var(--blue);
 }
 /* box 3 */
-.settings .box:nth-of-type(3) .clon:not(:last-child) {
-    border-bottom: 1px solid var(--section-background);
-}
 .settings .box:nth-of-type(3) .clon:last-child button {
     background-color: var(--box-background);
-    color: black;
 }
 /* box 4 */
-.settings .box:nth-of-type(4) .holder .clon {
-    border: 1px solid var(--border-color);
+.settings .box:nth-of-type(4) .holder input {
+    caret-color: var(--color);
 }
 .settings .box:nth-of-type(4) .holder i {
     width: 40px;
     height: 40px;
     display: flex;
 }
-.settings .box:nth-of-type(4) .holder .clon:hover i {
+.settings .box:nth-of-type(4) .holder .clon input:focus ~ i {
     color: var(--color);
-}
-.settings .box:nth-of-type(4) .holder input {
-    border: none;
-    border-left: 1px solid var(--border-color);
-    caret-color: var(--color);
-    color: var(--color);
-    /* height: 100%; */
-}
-.settings .box:nth-of-type(4) .holder input:focus ~ i {
-    color: black; 
 }
 /* box 5 */
 .settings .box:nth-last-of-type(2) .clon input {
-    /* position: absolute; */
     opacity: 0;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    position: absolute;
     height: 25px;
     width: 25px;
     z-index: 19;
 }
 .settings .box:nth-last-of-type(2) .clon .check-box:hover .check-mark {
     background-color: #ccc;
-    transition: var(--delay);
 }
 .settings .box:nth-last-of-type(2) .clon .check-box input:checked ~ .check-mark {
     background-color: #2196F3;
@@ -892,7 +866,6 @@ body {
     height: 25px;
     width: 25px;
     background-color: #eee;
-    position: relative;
 }
 .settings .box:nth-last-of-type(2) .clon .check-mark::before {
     position: absolute;
@@ -913,10 +886,8 @@ body {
 }
 /* box 6 */
 .settings .box:last-of-type .holder .clon:first-of-type input {
-    position: absolute;
     opacity: 0;
     z-index: 10;
-    cursor: pointer;
     height: 25px;
     width: 25px;
 }
@@ -930,12 +901,9 @@ body {
     background-color: var(--blue);
 }
 .settings .box:last-of-type .holder .clon:first-of-type .radio-box {
-    position: relative;
     height: 25px;
     width: 25px;
     background-color: #eee;
-    border-radius: 50%;
-    transition: var(--delay);
 }
 .settings .box:last-of-type .holder .clon:first-of-type .radio-box::before {
     content: "";
@@ -960,19 +928,8 @@ body {
     }
 }
 .settings .box:last-of-type .holder2 input {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
     opacity: 0;
-    cursor: pointer;
     z-index: 10;
-}
-.settings .box:last-of-type .holder2 .pilar span {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border: 1px solid var(--light-color);
 }
 .settings .box:last-of-type .holder2 .pilar:hover span {
     border: 1px solid black;
@@ -999,27 +956,22 @@ body {
         grid-column: 1/4;
     }
 }
-@media (max-width:955px) {
+@media (max-width:1006px) {
     .profile .box:first-of-type .holder {
         flex-direction: column;
         align-items: stretch;
     }
 }
 .profile .box:first-of-type .holder h4 {
-    margin-bottom: 20px;
     color: var(--blue);
 }
 .profile .box:first-of-type .holder .pilar:first-of-type i {
     color: var(--yellow);
 }
-.profile .box:first-of-type .holder .pilar:first-of-type {
-    border-right: 1px solid var(--section-background);
-}
 .profile .box:first-of-type .holder .pilar:first-of-type .image {
     width: 150px;
 }
 .profile .box:first-of-type .holder .pilar:first-of-type .bar {
-    width: 100%;
     height: 5px;
     border-radius: 50px;
     background-color: var(--box-background);
@@ -1034,16 +986,10 @@ body {
     background-color: var(--blue);
 }
 .profile .box:first-of-type .holder .pilar:last-of-type {
-    display: grid;
     grid-template-columns: 1fr;
 }
-.profile .box:first-of-type .holder .pilar:last-of-type .clon:not(:last-of-type) {
-    border-bottom: 1px solid var(--section-background);
-}
 .profile .box:first-of-type .holder .pilar:last-of-type .clon .hold {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
 }
 .profile .box:first-of-type .holder .pilar:last-of-type .clon:hover {
     background-color: var(--checked);
@@ -1055,8 +1001,7 @@ body {
 .profile .box:first-of-type .holder .pilar:last-of-type .clon .hold .btn-slide .effect::after {
     font-size: 16px;
 }
-/* box 2 */
-/* box */
+/* box 3*/
 @media (min-width:1140px) {
     .profile .box:last-of-type {
         grid-column: 2/4;

@@ -67,7 +67,7 @@
                                     <div class="effect"></div>
                                 </div>
                             </div>
-                            <textarea class="p-20" name="msg" placeholder="Close Message Content"></textarea>
+                            <textarea class="p-20 b-none ph" name="msg" placeholder="Close Message Content"></textarea>
                         </div>
                     </div>
                     <div class="box">
@@ -77,12 +77,12 @@
                         </div>
                         <form class="p-20-lr p-10-tb box-flex-cl" action="#">
                             <p>First Name</p>
-                            <input type="text" name="f-name" id="f-name" placeholder="First Name" class="p-10 fss brr-5">
+                            <input type="text" name="f-name" id="f-name" placeholder="First Name" class="p-10 fss brr-5 flex-1 b-dark light-black">
                             <p>Last Name</p>
-                            <input type="text" name="l-name" id="l-name" placeholder="Last Name" class="p-10 fss brr-5">
+                            <input type="text" name="l-name" id="l-name" placeholder="Last Name" class="p-10 fss brr-5 flex-1 b-dark light-black">
                             <p>Email</p>
                             <div class="clon d-flex jcsb aic gap-10">
-                                <input type="mail" class="p-15 fss brr-10" placeholder="exemple@ss.com" readonly>
+                                <input type="mail" class="p-15 fss brr-10 flex-1 light-black b-none" placeholder="exemple@ss.com" readonly>
                                 <button class="btn">Change</button>
                             </div>
                         </form>
@@ -93,14 +93,14 @@
                             <span class="light">Security Information About Your Account</span>
                         </div>
                         <div class="holder box-flex-cl p-20-lr p-10-tb">
-                            <div class="clon d-flex jcsb aic gap-10 p-10-tb">
+                            <div class="clon d-flex jcsb aic gap-10 p-10-tb bb-light">
                                 <div class="text">
                                     <p class="fb p-5-tb">Password</p>
                                     <span class="light-black fss">Last Change On 25/10/2021</span>
                                 </div>
-                                <button class="btn m-0">Change</button>
+                                <button class="btn m-0 white">Change</button>
                             </div>
-                            <div class="clon d-flex jcsb aic p-10-tb">
+                            <div class="clon d-flex jcsb aic p-10-tb bb-light">
                                 <div class="text">
                                     <p class="fb p-5-tb">Two-Factor Authentication</p>
                                     <span class="light-black fss">Enable/Disable The Feature</span>
@@ -124,21 +124,21 @@
                             <h2>Social Media Stats</h2>
                         </div>
                         <div class="holder box-flex-cl p-20">
-                            <div style="--color: #1da1f2;--icon: '\e61b'" class="clon d-flex jcsb">
-                                <i class="fa-brands fa-twitter d-flex jcc aic light-black"></i>
-                                <input type="text" placeholder="Twitter Username" class="flex-1 p-5 ph">
+                            <div style="--color: #1da1f2;--icon: '\e61b'" class="clon d-flex-reverse jcsb b-dark">
+                                <input type="text" placeholder="Twitter Username" class="flex-1 p-5 ph --color bl-dark b-none">
+                                <i class="fa-brands fa-twitter jcc aic light-black"></i>
                             </div>
-                            <div style="--color: #1877f2;--icon: '\f09a'" class="clon d-flex jcsb">
-                                <i class="fa-brands fa-facebook-f d-flex jcc aic light-black"></i>
-                                <input type="text" placeholder="Facebook Username" class="flex-1 p-5 ph">
+                            <div style="--color: #1877f2;--icon: '\f09a'" class="clon d-flex-reverse jcsb b-dark">
+                                <input type="text" placeholder="Facebook Username" class="flex-1 p-5 ph --color bl-dark b-none">
+                                <i class="fa-brands fa-facebook-f jcc aic light-black"></i>
                             </div>
-                            <div style="--color: #ff0000;--icon: '\f167'" class="clon d-flex jcsb">
-                                <i class="fa-brands fa-youtube d-flex jcc aic light-black"></i>
-                                <input type="text" placeholder="Youtube Username" class="flex-1 p-5 ph">
+                            <div style="--color: #ff0000;--icon: '\f167'" class="clon d-flex-reverse jcsb b-dark">
+                                <input type="text" placeholder="Youtube Username" class="flex-1 p-5 ph --color bl-dark b-none">
+                                <i class="fa-brands fa-youtube jcc aic light-black"></i>
                             </div>
-                            <div style="--color: #0a66c2;--icon: '\f08c'" class="clon d-flex jcsb">
-                                <i class="fa-brands fa-linkedin-in d-flex jcc aic light-black"></i>
-                                <input type="text" placeholder="Linkedin Username" class="flex-1 p-5 ph">
+                            <div style="--color: #0a66c2;--icon: '\f08c'" class="clon d-flex-reverse jcsb b-dark">
+                                <input type="text" placeholder="Linkedin Username" class="flex-1 p-5 ph --color bl-dark b-none">
+                                <i class="fa-brands fa-linkedin-in jcc aic light-black"></i>
                             </div>
                         </div>
                     </div>
@@ -150,43 +150,43 @@
                         <div class="holder d-flex-cl gap-10 p-holder">
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="box" type="checkbox" checked>
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="box" type="checkbox" class="t-0 l-0 cp p-absolute" checked>
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="box" class="p-5">Quick Draft</label>
                             </div>
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="box2" type="checkbox" checked>
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="box2" type="checkbox" class="t-0 l-0 cp p-absolute" checked>
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="box2" class="p-5">Yearly Targets</label>
                             </div>
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="bo3" type="checkbox">
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="bo3" type="checkbox" class="t-0 l-0 cp p-absolute">
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="bo3" class="p-5">Tickets Statistics</label>
                             </div>
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="box4" type="checkbox" checked>
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="box4" type="checkbox" class="t-0 l-0 cp p-absolute" checked>
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="box4" class="p-5">Latest News</label>
                             </div>
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="box5" type="checkbox">
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="box5" type="checkbox" class="t-0 l-0 cp p-absolute">
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="box5" class="p-5">Latest Tasks</label>
                             </div>
                             <div class="clon d-flex gap-10 p-relative">
                                 <div class="check-box">
-                                    <input id="box6" type="checkbox">
-                                    <span class="check-mark d-flex jcc aic"></span>
+                                    <input id="box6" type="checkbox" class="t-0 l-0 cp p-absolute">
+                                    <span class="check-mark d-flex jcc aic td p-relative"></span>
                                 </div>
                                 <label for="box6" class="p-5">Top Search Items</label>
                             </div>
@@ -200,37 +200,37 @@
                         <div class="holder d-flex-cl gap-10 p-holder">
                             <div class="clon d-flex-cl gap-10">
                                 <div class="radio p-relative d-flex aic p-5-tb gap-10">
-                                    <input type="radio" name="same" id="radio1" checked>
-                                    <span class="radio-box"></span>
+                                    <input type="radio" name="same" id="radio1" class="p-absolute cp"  checked>
+                                    <span class="radio-box p-relative td brr-cercle"></span>
                                     <label for="radio1">Daily</label>
                                 </div>
                                 <div class="radio p-relative d-flex aic p-5-tb gap-10">
-                                    <input type="radio" name="same" id="radio2">
-                                    <span class="radio-box"></span>
+                                    <input type="radio" name="same" id="radio2" class="p-absolute cp">
+                                    <span class="radio-box p-relative td brr-cercle"></span>
                                     <label for="radio2">Weekly</label>
                                 </div>
                                 <div class="radio p-relative d-flex aic p-5-tb gap-10">
-                                    <input type="radio" name="same" id="radio3">
-                                    <span class="radio-box"></span>
+                                    <input type="radio" name="same" id="radio3" class="p-absolute cp"> 
+                                    <span class="radio-box p-relative td brr-cercle"></span>
                                     <label for="radio3">Monthly</label>
                                 </div>
                             </div>
                             <div class="holder2 gap-10 p-10">
                                 <div class="pilar d-flex-cl jcc aic gap-10 p-relative p-10">
-                                    <input type="radio" name="game" id="game1" checked>
-                                    <span class="radio-border brr-10"></span>
+                                    <input type="radio" name="game" id="game1" class="p-absolute h100 w100 brr-10 cp"  checked>
+                                    <span class="radio-border brr-10 w100 h100 p-absolute b-dark td"></span>
                                     <i class="fa-solid fa-server"></i>
                                     <p>Alpha</p>
                                 </div>
                                 <div class="pilar d-flex-cl jcc aic gap-10 p-relative p-10">
-                                    <input type="radio" name="game" id="game2">
-                                    <span class="radio-border brr-10"></span>
+                                    <input type="radio" name="game" id="game2" class="p-absolute h100 w100 brr-10 cp">
+                                    <span class="radio-border brr-10 w100 h100 p-absolute b-dark td"></span>
                                     <i class="fa-solid fa-server"></i>
                                     <p>Beta</p>
                                 </div>
                                 <div class="pilar d-flex-cl jcc aic gap-10 p-relative p-10">
-                                    <input type="radio" name="game" id="game3">
-                                    <span class="radio-border brr-10"></span>
+                                    <input type="radio" name="game" id="game3" class="p-absolute h100 w100 brr-10 cp">
+                                    <span class="radio-border brr-10 w100 h100 p-absolute b-dark td"></span>
                                     <i class="fa-solid fa-server"></i>
                                     <p>Sigma</p>
                                 </div>

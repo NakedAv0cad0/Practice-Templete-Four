@@ -1,4 +1,11 @@
 /* Dispaly */
+.d-flex {
+    display: flex;
+}
+.d-flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .box-flex-cl {
     display: flex;
     flex-direction: column;
@@ -19,9 +26,6 @@
 }
 .gap-5 {
     gap: 5px;
-}
-.d-flex {
-    display: flex;
 }
 .flex-1 {
     flex: 1;
@@ -196,6 +200,9 @@
 .m-20-t {
     margin-top: 20px;
 }
+.m-20-b {
+    margin-bottom: 20px;
+}
 .m-20-l {
     margin-left: 20px;
 }
@@ -290,20 +297,29 @@
 .ofh {
     overflow: hidden;
 }
+.b-none {
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
 .bb-light {
     border-bottom: 1px solid #eee;
 }
+.br-light {
+    border-right: 1px solid #eee;
+}
 .bb-dark {
     border-bottom: 1px solid var(--border-color);
+}
+.bl-dark {
+    border-left: 1px solid var(--border-color);
 }
 .b-light {
     border: 1px solid #eee;
 }
 .b-dark {
     border: 1px solid var(--border-color);
-}
-.b-none {
-    border: none;
 }
 .ss-box {
     background-color: var(--light-color);
