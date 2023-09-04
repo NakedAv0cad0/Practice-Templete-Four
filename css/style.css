@@ -319,7 +319,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: stretch;
-    gap: 10px;
 }
 .sidebar .bar .links li {
     padding: 5px 0 5px 20px;
@@ -352,7 +351,7 @@ body {
         display: none;
     }
 }
-.sidebar .bar .links p:hover, .sidebar .bar .links .link:hover, .sidebar .bar .links .checked {
+.sidebar .bar .links p:hover, .sidebar .bar .links .link:hover, .sidebar .bar .links .checked p {
     background-color: var(--checked);
 }
 .sidebar .bar .links .link::before {
